@@ -5,7 +5,6 @@ export interface ProseProps extends HTMLChakraProps<'div'> {}
 
 export function Prose(props: ProseProps) {
   const { children, as = 'article' } = props;
-
   const styles = useStyleConfig('Prose', { ...props });
 
   return (
