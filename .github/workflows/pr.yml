@@ -37,7 +37,7 @@ jobs:
           CI: true
 
       - name: Build and Lint packages
-        run: yarn turbo run lint --token $TURBO_TOKEN --team $TURBO_TEAM
+        run: yarn turbo run lint --token$TURBO_TOKEN --team$TURBO_TEAM
         env:
           TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
           TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
