@@ -1,0 +1,65 @@
+{
+  "name": "chakra-ui-prose",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A custom Chakra UI component that adds ready-made styles for rendering remote HTML content.",
+  "keywords": [
+    "react",
+    "chakra-ui",
+    "component",
+    "prose",
+    "typography"
+  ],
+  "author": "Lazar Nikolov <hello@nikolovlazar.com>",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "packages"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikolovlazar/chakra-ui-prose.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nikolovlazar/chakra-ui-prose/issues"
+  },
+  "homepage": "https://github.com/nikolovlazar/chakra-ui-prose#readme",
+  "scripts": {
+    "release": "changeset publish"
+  },
+  "peerDependencies": {
+    "@chakra-ui/react": "^1.8.6",
+    "@chakra-ui/system": "^1.11.2",
+    "react": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.8",
+    "@babel/plugin-proposal-class-properties": "^7.16.7",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/preset-typescript": "^7.16.7",
+    "@babel/runtime": "^7.17.8",
+    "@chakra-ui/babel-plugin": "^1.0.2",
+    "@chakra-ui/react": "^1.8.6",
+    "@chakra-ui/system": "^1.11.2",
+    "@types/react": "^17.0.41",
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "@typescript-eslint/parser": "^5.16.0",
+    "eslint": "^8.11.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "react": "^17.0.2",
+    "ts-node": "^10.7.0",
+    "turbo": "^1.1.9",
+    "typescript": "^4.6.2"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  }
+}
