@@ -41,3 +41,22 @@ const MyPage = (content) => {
 
 export default MyPage;
 ```
+
+## Overriding Style
+
+The `withProse` theme extension has an optional argument that overrides its default style. To change the style of a certain element, supply a component style object in the theme extension, provide the `baseStyle` property and override the element, like so:
+
+```typescript
+const theme = extendTheme(
+  {},
+  withProse({
+    baseStyle: {
+      h2: {
+        fontWeight: 'light',
+      },
+    },
+  })
+);
+```
+
+> Refer to the [default theme](src/theme.ts) when overriding certain elements.
