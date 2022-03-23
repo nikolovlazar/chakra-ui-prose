@@ -60,3 +60,5 @@ const theme = extendTheme(
 ```
 
 > Refer to the [default theme](src/theme.ts) when overriding certain elements.
+
+I've also created a [CodeSandbox](https://codesandbox.io/s/chakra-ui-prose-h2yqrj?file=/src/index.tsx) which you can use to try out the Prose component, and override its default style.
