@@ -1,5 +1,11 @@
 # @nikolovlazar/chakra-ui-prose
 
+## 1.0.4
+
+### Patch Changes
+
+- [#1](https://github.com/nikolovlazar/chakra-ui-prose/pull/1) [`c50c94e`](https://github.com/nikolovlazar/chakra-ui-prose/commit/c50c94e840c687eefb87df373af766c0493f41d1) Thanks [@nikolovlazar](https://github.com/nikolovlazar)! - test release workflow
+
 ## 1.0.3
 
 ### Patch Changes
