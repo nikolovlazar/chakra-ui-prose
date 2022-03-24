@@ -1,5 +1,11 @@
 # @nikolovlazar/chakra-ui-prose
 
+## 1.0.6
+
+### Patch Changes
+
+- [#5](https://github.com/nikolovlazar/chakra-ui-prose/pull/5) [`4f1ef7f`](https://github.com/nikolovlazar/chakra-ui-prose/commit/4f1ef7fd5bfa5f567bd8b8a61b080e58e9c4b30c) Thanks [@nikolovlazar](https://github.com/nikolovlazar)! - fixed default theme link in readme
+
 ## 1.0.5
 
 ### Patch Changes
