@@ -62,3 +62,9 @@ const theme = extendTheme(
 > Refer to the [default theme](src/theme.ts) when overriding certain elements.
 
 I've also created a [CodeSandbox](https://codesandbox.io/s/chakra-ui-prose-h2yqrj?file=/src/index.tsx) which you can use to try out the Prose component, and override its default style.
+
+## Making it official
+
+The Prose package is not part of the official Chakra UI package for a reason. We decided to roll it out as a separate package is to avoid bloating the core library while we figure out how much people actually need it.
+
+If you want this package to be part of the core library, let us know in this discussion thread: https://github.com/chakra-ui/chakra-ui-docs/discussions/469.
