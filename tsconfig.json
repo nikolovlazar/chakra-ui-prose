@@ -20,7 +20,7 @@
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
     "downlevelIteration": true,
-    "incremental": true,
+    "incremental": false,
     "declarationMap": true,
     "outDir": "./dist"
   },
