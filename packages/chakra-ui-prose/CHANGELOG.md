@@ -1,5 +1,11 @@
 # @nikolovlazar/chakra-ui-prose
 
+## 1.0.7
+
+### Patch Changes
+
+- [#8](https://github.com/nikolovlazar/chakra-ui-prose/pull/8) [`6cd7ac0`](https://github.com/nikolovlazar/chakra-ui-prose/commit/6cd7ac0b6a4cdd5280e448091aae87b1d4fd16e0) Thanks [@nikolovlazar](https://github.com/nikolovlazar)! - avoid shipping tsbuildinfo files
+
 ## 1.0.6
 
 ### Patch Changes
