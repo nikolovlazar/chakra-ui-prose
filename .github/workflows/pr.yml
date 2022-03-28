@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    name: Build and Lint
+    name: Build, Lint, and release to @dev
     runs-on: ubuntu-latest
     steps:
       - name: Get Yarn cache path
@@ -45,7 +45,6 @@ jobs:
       - name: Release to @dev tag
         if: steps.changesets.outputs.published != 'true'
         run: |
-          git checkout main
           yarn changeset version --snapshot dev
           yarn changeset publish --tag dev
         env:
