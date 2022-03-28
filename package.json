@@ -33,14 +33,6 @@
     "react": "^17.0.2"
   },
   "devDependencies": {
-    "@babel/cli": "^7.17.6",
-    "@babel/core": "^7.17.8",
-    "@babel/plugin-proposal-class-properties": "^7.16.7",
-    "@babel/preset-env": "^7.16.11",
-    "@babel/preset-react": "^7.16.7",
-    "@babel/preset-typescript": "^7.16.7",
-    "@babel/runtime": "^7.17.8",
-    "@chakra-ui/babel-plugin": "^1.0.2",
     "@chakra-ui/react": "^1.8.6",
     "@chakra-ui/system": "^1.11.2",
     "@types/react": "^17.0.41",

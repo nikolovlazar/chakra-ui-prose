@@ -2,7 +2,7 @@ name: PR Workflow
 
 on:
   pull_request:
-    types: [opened, synchronize, ready_for_review, edited, closed]
+    types: [opened, synchronize]
     branches:
       - main
 
@@ -41,3 +41,13 @@ jobs:
         env:
           TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
           TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
+
+      - name: Release to @dev tag
+        if: steps.changesets.outputs.published != 'true'
+        run: |
+          git checkout main
+          yarn changeset version --snapshot dev
+          yarn changeset publish --tag dev
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

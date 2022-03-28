@@ -1,5 +1,4 @@
-import * as React from 'react';
-import { chakra, HTMLChakraProps, useStyleConfig } from '@chakra-ui/system';
+import { chakra, HTMLChakraProps, useStyleConfig } from '@chakra-ui/react';
 
 export interface ProseProps extends HTMLChakraProps<'div'> {}
 
