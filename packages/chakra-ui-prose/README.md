@@ -48,7 +48,7 @@ export default MyPage;
 
 ### Content Sanitation
 
-If you're rendering content that's not entered by you, it's a good idea to sanitize the content before rendering it. There are numerous packages for content sanitation, but for this example we'll use the `DOMPurify` package. First you need to install the package itself:
+If you're rendering content that's not entered by you, it's a good idea to sanitize the content before rendering it. There are numerous packages for content sanitation, but for this example we'll use the [DOMPurify](https://www.npmjs.com/package/dompurify) package. First you need to install the package itself:
 
 ```sh
 yarn add dompurify
