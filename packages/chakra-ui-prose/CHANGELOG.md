@@ -1,5 +1,11 @@
 # @nikolovlazar/chakra-ui-prose
 
+## 1.0.8
+
+### Patch Changes
+
+- [#14](https://github.com/nikolovlazar/chakra-ui-prose/pull/14) [`fa13cf0`](https://github.com/nikolovlazar/chakra-ui-prose/commit/fa13cf008f256e0b5b031085f5b09b58ebac92fc) Thanks [@nikolovlazar](https://github.com/nikolovlazar)! - added content sanitation guide
+
 ## 1.0.7
 
 ### Patch Changes
