@@ -30,17 +30,56 @@ export default theme;
 > your ChakraProvider.
 
 Then, to render the remote HTML content, you need to import the `Prose`
-component and wrap your content with it:
+component and add a `div` element with `dangerouslySetInnerHTML` inside of it:
 
 ```jsx
 import { Prose } from '@nikolovlazar/chakra-ui-prose';
 
 const MyPage = (content) => {
-  return <Prose>{content}</Prose>;
+  return (
+    <Prose>
+      <div dangerouslySetInnerHTML={{ _html: content }} />
+    </Prose>
+  );
 };
 
 export default MyPage;
 ```
+
+### Content Sanitation
+
+If you're rendering content that's not entered by you, it's a good idea to sanitize the content before rendering it. There are numerous packages for content sanitation, but for this example we'll use the `DOMPurify` package. First you need to install the package itself:
+
+```sh
+yarn add dompurify
+
+# or
+
+npm i dompurify
+```
+
+Then, you need to use the `sanitize` method before rendering your content:
+
+```jsx
+import { Prose } from '@nikolovlazar/chakra-ui-prose';
+import DOMPurify from 'dompurify';
+
+const MyPage = (content) => {
+  return (
+    <Prose>
+      <div
+        dangerouslySetInnerHTML={{
+          __html: DOMPurify.sanitize(content),
+        }}
+      />
+    </Prose>
+  );
+};
+
+export default MyPage;
+```
+
+This way you'll make sure that the user-submitted content will be safe and you won't be exposed to [cross-site scripting (XSS)](https://en.wikipedia.org/wiki/Cross-site_scripting) attacks.
 
 ## Overriding Style
 
