@@ -1,5 +1,11 @@
 # @nikolovlazar/chakra-ui-prose
 
+## 1.1.0
+
+### Minor Changes
+
+- [#17](https://github.com/nikolovlazar/chakra-ui-prose/pull/17) [`9db5dba`](https://github.com/nikolovlazar/chakra-ui-prose/commit/9db5dbaebe523e3d606896013f401adcd0040209) Thanks [@AshMW2724](https://github.com/AshMW2724)! - Set peer dependencies to accept minimum
+
 ## 1.0.8
 
 ### Patch Changes
