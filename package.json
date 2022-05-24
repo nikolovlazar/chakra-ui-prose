@@ -1,6 +1,6 @@
 {
   "name": "chakra-ui-prose",
-  "version": "1.0.0",
+  "version": "1.0.",
   "private": true,
   "description": "A custom Chakra UI component that adds ready-made styles for rendering remote HTML content.",
   "keywords": [
