@@ -32,9 +32,9 @@
   },
   "homepage": "https://github.com/nikolovlazar/chakra-ui-prose#readme",
   "peerDependencies": {
-    "@chakra-ui/react": "^1.8.6",
-    "@chakra-ui/system": "^1.11.2",
-    "react": "^17.0.2"
+    "@chakra-ui/react": ">=1.8.6",
+    "@chakra-ui/system": ">=1.11.2",
+    "react": ">=17.0.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.17.6",
