@@ -1,4 +1,4 @@
-import { Button, Container } from '@chakra-ui/react';
+import { Container } from '@chakra-ui/react';
 import { Prose } from '@nikolovlazar/chakra-ui-prose';
 
 const Index = () => (
