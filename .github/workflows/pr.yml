@@ -2,13 +2,13 @@ name: PR Workflow
 
 on:
   pull_request:
-    types: [opened, synchronize, ready_for_review, edited, closed]
+    types: [opened, synchronize]
     branches:
       - main
 
 jobs:
   build:
-    name: Build and Lint
+    name: Build, Lint, and release to @dev
     runs-on: ubuntu-latest
     steps:
       - name: Get Yarn cache path
@@ -41,3 +41,20 @@ jobs:
         env:
           TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
           TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
+
+      - name: Configure npm
+        run: |
+          cat << EOF > "$HOME/.npmrc"
+            //registry.npmjs.org/:_authToken=$NPM_TOKEN
+          EOF
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Release to @dev tag
+        if: steps.changesets.outputs.published != 'true'
+        run: |
+          yarn changeset version --snapshot dev
+          yarn changeset publish --tag dev
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
