@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/nikolovlazar/chakra-ui-prose#readme",
   "scripts": {
+    "build": "turbo run build",
     "release": "changeset publish"
   },
   "peerDependencies": {
