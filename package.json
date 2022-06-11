@@ -18,7 +18,8 @@
   ],
   "workspaces": {
     "packages": [
-      "packages/*"
+      "packages/*",
+      "apps/*"
     ]
   },
   "repository": {
@@ -31,6 +32,7 @@
   "homepage": "https://github.com/nikolovlazar/chakra-ui-prose#readme",
   "scripts": {
     "build": "turbo run build",
+    "dev": "turbo run dev",
     "release": "changeset publish"
   },
   "peerDependencies": {

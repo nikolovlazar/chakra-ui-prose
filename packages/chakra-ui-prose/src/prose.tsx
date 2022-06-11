@@ -1,13 +1,13 @@
-import { chakra, HTMLChakraProps, useStyleConfig } from '@chakra-ui/react';
+import { chakra, useStyleConfig, BoxProps } from '@chakra-ui/react';
 
-export interface ProseProps extends HTMLChakraProps<'div'> {}
+export type ProseProps = BoxProps;
 
 export function Prose(props: ProseProps) {
-  const { children, as = 'article' } = props;
+  const { children, as = 'article', ...rest } = props;
   const styles = useStyleConfig('Prose', { ...props });
 
   return (
-    <chakra.div as={as} __css={{ ...styles }}>
+    <chakra.div as={as} __css={{ ...styles }} {...rest}>
       {children}
     </chakra.div>
   );

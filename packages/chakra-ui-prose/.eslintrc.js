@@ -18,5 +18,8 @@ module.exports = {
     'react/jsx-filename-extension': 'off',
     'import/no-unresolved': 'off',
     'react/react-in-jsx-scope': 'off',
+    'import/no-extraneous-dependencies': 'off',
+    'consistent-return': 'off',
+    'react/jsx-props-no-spreading': 'off',
   },
 };
