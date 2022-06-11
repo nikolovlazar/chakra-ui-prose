@@ -41,12 +41,12 @@
     "react": ">=17.0.2"
   },
   "devDependencies": {
-    "@chakra-ui/react": "^1.8.6",
-    "@chakra-ui/system": "^1.11.2",
+    "@chakra-ui/react": "latest",
+    "@chakra-ui/system": "latest",
     "@changesets/changelog-github": "^0.4.3",
     "@changesets/cli": "^2.21.1",
-    "@types/react": "^17.0.41",
-    "react": "^17.0.2",
+    "@types/react": "latest",
+    "react": "latest",
     "ts-node": "^10.7.0",
     "tsup": "^6.1.2",
     "typescript": "^4.6.2"

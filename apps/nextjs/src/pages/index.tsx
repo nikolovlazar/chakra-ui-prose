@@ -1,8 +1,9 @@
-import { Container } from '@chakra-ui/react';
+import { Button, Container } from '@chakra-ui/react';
 import { Prose } from '@nikolovlazar/chakra-ui-prose';
 
 const Index = () => (
   <Container w="full" maxW="container.lg" mx="auto">
+    <Button>No outline!</Button>
     <Prose>
       <h1>Title Heading 1</h1>
       <h2>Title Heading 2</h2>
