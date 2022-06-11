@@ -16,6 +16,11 @@
     "dist",
     "packages"
   ],
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nikolovlazar/chakra-ui-prose.git"
@@ -49,10 +54,5 @@
     "ts-node": "^10.7.0",
     "turbo": "^1.1.9",
     "typescript": "^4.6.2"
-  },
-  "workspaces": {
-    "packages": [
-      "packages/*"
-    ]
   }
 }
