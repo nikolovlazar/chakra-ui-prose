@@ -1,5 +1,15 @@
 # @nikolovlazar/chakra-ui-prose
 
+## 1.2.0
+
+### Minor Changes
+
+- [#11](https://github.com/nikolovlazar/chakra-ui-prose/pull/11) [`d99b3a0`](https://github.com/nikolovlazar/chakra-ui-prose/commit/d99b3a05138c27ac07638cd5f32b8ce0bb31af80) Thanks [@nikolovlazar](https://github.com/nikolovlazar)! - added tsup integration + extended Prose component to receive style props
+
+### Patch Changes
+
+- [#11](https://github.com/nikolovlazar/chakra-ui-prose/pull/11) [`d4cfbf3`](https://github.com/nikolovlazar/chakra-ui-prose/commit/d4cfbf338d6b88876821cca2048f9cd79856d094) Thanks [@nikolovlazar](https://github.com/nikolovlazar)! - smaller bundle size
+
 ## 1.1.0
 
 ### Minor Changes
