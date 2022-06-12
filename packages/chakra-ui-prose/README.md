@@ -36,11 +36,7 @@ component and add a `div` element with `dangerouslySetInnerHTML` inside of it:
 import { Prose } from '@nikolovlazar/chakra-ui-prose';
 
 const MyPage = (content) => {
-  return (
-    <Prose>
-      <div dangerouslySetInnerHTML={{ _html: content }} />
-    </Prose>
-  );
+  return <Prose dangerouslySetInnerHTML={{ _html: content }} />;
 };
 
 export default MyPage;
@@ -66,13 +62,11 @@ import DOMPurify from 'dompurify';
 
 const MyPage = (content) => {
   return (
-    <Prose>
-      <div
-        dangerouslySetInnerHTML={{
-          __html: DOMPurify.sanitize(content),
-        }}
-      />
-    </Prose>
+    <Prose
+      dangerouslySetInnerHTML={{
+        __html: DOMPurify.sanitize(content),
+      }}
+    />
   );
 };
 
@@ -80,6 +74,10 @@ export default MyPage;
 ```
 
 This way you'll make sure that the user-submitted content will be safe and you won't be exposed to [cross-site scripting (XSS)](https://en.wikipedia.org/wiki/Cross-site_scripting) attacks.
+
+## Styling the `Prose` component
+
+The `Prose` component receives Chakra UI's `BoxProps`, which means you can use [Style Props](https://chakra-ui.com/docs/styled-system/features/style-props) like `p`, `mx`, `maxW` etc... to apply styling to the Prose component itself.
 
 ## Overriding Style
 
@@ -94,7 +92,7 @@ const theme = extendTheme(
         fontWeight: 'light',
       },
     },
-  })
+  }),
 );
 ```
 
