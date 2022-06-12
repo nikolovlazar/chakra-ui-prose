@@ -1,4 +1,4 @@
-import { chakra, useStyleConfig, BoxProps } from '@chakra-ui/react';
+import { chakra, useStyleConfig, type BoxProps } from '@chakra-ui/react';
 
 export type ProseProps = BoxProps;
 
