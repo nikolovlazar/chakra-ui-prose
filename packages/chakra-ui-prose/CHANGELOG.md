@@ -1,5 +1,11 @@
 # @nikolovlazar/chakra-ui-prose
 
+## 1.2.1
+
+### Patch Changes
+
+- [#22](https://github.com/nikolovlazar/chakra-ui-prose/pull/22) [`8784b6c`](https://github.com/nikolovlazar/chakra-ui-prose/commit/8784b6c78dc101e6e8f4b233dcb084197383f5fd) Thanks [@nikolovlazar](https://github.com/nikolovlazar)! - Updated README to include Prose component styling
+
 ## 1.2.0
 
 ### Minor Changes
